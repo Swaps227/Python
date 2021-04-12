@@ -1,0 +1,63 @@
+'''
+Write a program for a basic calculator!
+'''
+
+def add(num1,num2):
+    return num1 + num2
+def sub(num1,num2):
+    return num1 - num2
+def multi(num1,num2):
+    return num1 * num2
+def div(num1,num2):
+    return num1 / num2
+
+print("Select an Arithmetic Operation: \n" \
+      "1) Add \n" \
+      "2) Sub \n" \
+      "3) Multiply \n" \
+      "4) Divide \n" )
+
+select = int(input("Operation selection is 1,2,3,4:"))
+num1 = int(input("Enter first number:"))
+num2 = int(input("Enter second number:"))
+
+if select == 1:
+    print(num1, "+", num2, "=" ,add(num1,num2))
+elif select == 2:
+    print(num1, "-", num2, "=" ,sub(num1,num2))
+elif select == 3:
+    print(num1, "*", num2, "=" ,multi(num1,num2))
+elif select == 4:
+    print(num1, "/", num2, "=" ,div(num1,num2))
+else:
+    print("Invalid Input")
+
+
+'''
+Output:
+Select an Arithmetic Operation:
+1) Add
+2) Sub
+3) Multiply
+4) Divide
+
+Operation selection is 1,2,3,4:1
+Enter first number:2
+Enter second number:4
+2 + 4 = 6
+
+Operation selection is 1,2,3,4:2
+Enter first number:2
+Enter second number:4
+2 - 4 = -2
+
+Operation selection is 1,2,3,4:3
+Enter first number:2
+Enter second number:4
+2 * 4 = 8
+
+Operation selection is 1,2,3,4:4
+Enter first number:2
+Enter second number:4
+2 / 4 = 0.5
+'''
