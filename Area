@@ -1,0 +1,52 @@
+# Write a program to calculate Area of a Square, Rectangle and a Circle
+
+def square(side1):
+    return side1 * side1
+def rec(side1,side2):
+    return side1 * side2
+def circle(side1):
+    return 3.14 * side1 * side1
+
+print("Calculate Area of: \n" \
+      "1. Square \n" \
+      "2. Rectangle \n" \
+      "3. Circle" )
+
+select = int(input("Select Object to calculate Area of 1,2,3:"))
+side1 = int(input("Enter value for side1:"))
+side2 = int(input("Enter value of side2:"))
+
+
+if select == 1:
+    print("Area of Square is:",side1,"*",side1,"=",square(side1))
+elif select == 2:
+    print("Area of Rectangle is:",side1,"*",side2,"=",rec(side1,side2))
+elif select == 3:
+    print("Area of Circle is:","3.14","*",side1,"*",side1,"=",circle(side1))
+else:
+    print("Invalid input")
+
+
+'''
+Output:
+
+Calculate Area of:
+1. Square
+2. Rectangle
+3. Circle
+Select Object to calculate Area of 1,2,3:1
+Enter value for side1:4
+Enter value of side2:2
+Area of Square is: 4 * 4 = 16
+
+Select Object to calculate Area of 1,2,3:2
+Enter value for side1:4
+Enter value of side2:2
+Area of Rectangle is: 4 * 2 = 8
+
+Select Object to calculate Area of 1,2,3:3
+Enter value for side1:4
+Enter value of side2:2
+Area of Circle is: 3.14 * 4 * 4 = 50.24
+
+'''
