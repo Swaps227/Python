@@ -1,0 +1,36 @@
+#To check if a number is palindrome or not (121 = 121)
+
+num = int(input("The given number is : "))
+
+org_num = num
+flag = ()
+rev = 0
+if num < 0:
+    flag = True
+    num = abs(num)
+while (num > 0):
+    flag = True
+    mod = num % 10
+    num = num // 10
+    rev = rev * 10 + mod
+
+if flag == True:
+    rev = rev - 0
+print("The reverse of the number is:",rev)
+
+if rev == org_num:
+    print("The given number is a Palindrome!")
+else:
+    print("The given number is not a Palindrome!")
+
+'''
+Output:
+
+The given number is : 1234
+The reverse of the number is: 4321
+The given number is not a Palindrome!
+
+The given number is : 12321
+The reverse of the number is: 12321
+The given number is a Palindrome!
+'''

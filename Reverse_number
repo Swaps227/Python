@@ -1,0 +1,25 @@
+# Printing reverse of a given number
+
+num = int(input("The number to be reversed is :"))
+rev = 0
+flag = ()
+org_num = num
+if num < 0:
+    flag = True
+    num = abs(num)
+while (num > 0):
+    mod = num % 10
+    num = num //10
+    rev = rev * 10 + mod
+if flag == True:
+    rev = 0 - rev
+
+print("The reverse of the number is:",rev)
+
+'''
+Output:
+
+The given number is : 1234
+The reverse of the number is: 4321
+
+'''
